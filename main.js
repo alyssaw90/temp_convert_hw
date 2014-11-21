@@ -8,7 +8,7 @@ var button = document.getElementById("submit");
 button.addEventListener('click', function() {
 	// alert("temp")
 	
-	var temp = document.getElementById("fTemp").innerHTML
+	var temp = document.getElementById("fTemp").value
 	var finalTemp = tempConverter(temp)
 	console.log(finalTemp)
 	document.querySelector("#cTemp").value = finalTemp;
