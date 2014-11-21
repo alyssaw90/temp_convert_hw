@@ -7,16 +7,19 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 	<div class="container">
-		<h1>Temp Converter Lab</h1>
-		<div>
-			<input type="number" id="fTemp" placeholder="Temperature in Fahrenheit">
+		<div class="page-header">
+			<h1>Temperature Converter <small>Fahrenheit to Celsius</small></h1>
 		</div>
-		<div>
+		<div class="col-md-4">
+			<input type="number" id="fTemp" placeholder="Fahrenheit">
+		</div>
+		<div class="col-md-4">
 			<button id="submit" type="button" class="btn btn-primary">Convert!</button>
 		</div>
-		<div>
-			<input type="number" id="cTemp" placeholder="Temperature in Celsius">
+		<div class="col-md-4">
+			<input type="number" id="cTemp" placeholder="Celsius">
 		</div>
 	</div>
 	<script src="main.js"></script>
