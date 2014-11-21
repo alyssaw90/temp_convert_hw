@@ -4,6 +4,7 @@ var tempConverter = function(fTemp) {
 document.addEventListener("DOMContentLoaded", function() {
 // alert("I've loaded!")
 var button = document.getElementById("submit");
+var resetButton = document.getElementById("reset");
 
 button.addEventListener('click', function() {
 	// alert("temp")
@@ -13,24 +14,11 @@ button.addEventListener('click', function() {
 	console.log(finalTemp)
 	document.querySelector("#cTemp").value = finalTemp;
 });
+
+document.querySelector('#reset').addEventListener('click', function() {
+	document.querySelector('#fTemp').value = ""
+	document.querySelector('#cTemp').value = ""
+});
 })	
 
-// var temp = document.getElementById("fTemp")
-// var temp = parseInt(box.innerText);
-// console.log(temp);
 
-
-
-// function convertToF() {
-// 	var cTempVal = parseFloat(document.getElementById('cTemp').value);
-// 	var fTempVal = (cTempVal * (9/5)) + 32;
-// 	console.log(fTempVal);
-// 	document.getElementById('fTemp').value = fTempVal;
-// 	return false;
-// }
-
-
-// tempC = (.tempF-32) * (5/9);
-// tempC = tempC.toFixed(1);
-
-// console.log(tempC + 'ºC is ' + .tempF + 'ºF');
